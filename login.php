@@ -5,18 +5,18 @@
 
     $users = simplexml_load_file('database.xml');
     $usersArray = [];
-    for ($i = 0; $i < count($users); $i++) { 
+    for ($i = 0; $i < count($users); $i++) {
         $userNew = trim($users->person[$i]->username);
         $passwordNew = trim($users->person[$i]->psw);
         $usersArray[$userNew] = $passwordNew;
     }
 
-		$username = preg_replace('/[^A-Za-z]/' , '', $_POST['username']);
-		$password = $_POST['password'];
+    $username = $_POST['username'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 
 		foreach ($usersArray as $key => $value) {
-			if (($key == $username) && ($value == $password)) {
+			if (($key == $username) && (password_verify($value, $password))) {
 				session_start();
 				$_SESSION['username'] = $username;
 				header('Location: index.php');
