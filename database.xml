@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<repertoire>
+
+	<person> <!--LUCIE -->
+		<username>Lucie</username>
+		<psw>cannes</psw>
+	</person>
+
+	<person> <!--ANNA -->
+		<username>Anna</username>
+		<psw>123</psw>
+	</person>
+
+	<person> <!--ANNE -->
+		<username>Anne</username>
+		<psw>simplon</psw>
+	</person>
+
+	<person> <!-- NICO -->
+		<username>Nico</username>
+		<psw>remybestteacherever</psw>
+	</person>
+
+
+</repertoire>
+
+
+
+
