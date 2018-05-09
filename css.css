@@ -1,0 +1,42 @@
+
+body {
+   padding-top: 40px;
+   padding-bottom: 40px;
+   background-color: #ADABAB;
+   text-align: center;
+}
+
+form {
+   max-width: 330px;
+   padding: 15px;
+   margin: 0 auto;
+   color: #E80C7A;
+   margin-bottom: 10px;
+  font-weight: normal;
+}
+
+form input[type="text"] {
+   border-color:#E80C7A;
+}
+
+form input[type="password"] {
+   border-color:#E80C7A;
+}
+
+h2{
+   text-align: center;
+   color: #E80C7A;
+
+}
+
+label {
+    width: 300px;
+    display: inline-block;
+    margin-bottom : 5px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  
+}

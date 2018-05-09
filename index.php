@@ -10,10 +10,11 @@
 <html>
 <head>
 	<title>User Page</title>
+	<link rel="stylesheet" href="css.css" />
 </head>
 <body>
-	<h1>User Page</h1>
-	<h2>Welcome, <?php echo $_SESSION['username']; ?></h2>
+	<h2>Page personnelle</h2>
+	<h2>Bienvenue cher.e <?php echo $_SESSION['username']; ?></h2>
 	<hr>
 	<a href="logout.php">Logout</a>
 </body>
